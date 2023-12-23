@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TodoList from './ToDoList';
 
-function App() {
+// Javascript Xml
+// JSX => js + html
+//export function App() { <- normal export işleminde başına export geliyor
+function App() {  // <- default export işleminde
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="App">
+        <TodoList />
+      </div>
+    );
 }
 
 export default App;
+//export const variable = 1;
+//export const variable2= 2;
