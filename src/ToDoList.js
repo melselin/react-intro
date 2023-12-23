@@ -14,16 +14,16 @@ const TodoList = () => {
   return (
     <div>
       <h1>Todo List</h1>
-      {/* Task için giriş inputu */}
+      {/* Input*/}
       <input
         type="text"
         value={task}
         onChange={(onTask) => setTask(onTask.target.value)}
-        placeholder="Yeni görev ekle"
+        placeholder="Add a new task!"
       />
-      {/* Task ekleme butonu */}
+      {/* Button for text adding */}
       <button onClick={addTask}>Ekle</button>
-      {/* Task listesi */}
+      {/* Task list */}
       <ul>
         {tasks.map((task, index) => (
           <li key={index}>{task}</li>
